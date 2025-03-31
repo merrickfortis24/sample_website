@@ -6,43 +6,126 @@
     <title>Document</title>
 </head>
 
-
 <style>
-    * {
-    margin: 10px, 20px, 15px, 12px;
-    padding: 5px, 10px, 5px, 15px;
-    font-family: sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    margin: 10px;
-    padding: 10px;
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
-.box-1 {
-    width: 100%;
-    background-color: rgb(199, 223, 235);
-    text-align: center;
-    font-size: 50px;
-    border-width: 4px;
-    border-style: outset;
-    border-radius: 10px;
-}
+
 h1, h2 {
     margin-bottom: 10px;
-    color: #000000;
+    color: #ffffff;
 }
+
 nav {
-    background-color: rgb(199, 223, 235);
+    background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 5px 10px; /* Reduce padding to make items closer */
+    margin: 0; /* Remove any extra margin */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+section {
+    background-color: #027e7e;
+    color: white;
+    padding: 20px;
     margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+article {
+    background-color: #027e7e;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #027e7e;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+aside ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the list items horizontal */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Add spacing between items */
+}
+
+aside ul li {
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section, article, aside {
+        margin-bottom: 10px;
+    }
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
 }
 </style>
 
-
 <body>
-    <div class="box-1">Box-1</div>
 </body>
 </html>
+
 <header>
     <h1>Sample website</h1>
     <p>This is a sample HTML document to demonstrate the use of HTML tags.</p>
@@ -54,28 +137,69 @@ nav {
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li> 
-        </ul>
+    </ul>
 </nav>
 
 <section>
     <h2>About us</h2>
-    <p>This is the about section of our website.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, 
+        nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. 
+        Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. 
+        Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. 
+        Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.
+    </p>
 </section>
 
 <article>
     <h2>Latest News</h2>
-    <p>This is the latest news article.</p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, 
+        nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. 
+        Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. 
+        Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. 
+        Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.
+    </p>
+    <p>
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. 
+        Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, 
+        sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+    </p>
 </article>
 
-    <aside>
-        <h2>Related Links</h2>
-        <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-        </ul>
-    </aside>
+<aside>
+    <h2>Related Links</h2>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://logolook.net/wp-content/uploads/2021/06/Facebook-Logo.png" alt="Facebook" style="width: 100px; height: 60px;">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 60px; height: 50px;">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.github.com" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 80px; height: 60px;">
+            </a>
+        </li>
+    </ul>
+</aside>
 
-    <footer>
-        <p>&copy; 2025 Sample Website. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Sample Website. All rights reserved.</p>
+</footer>
